@@ -1,0 +1,21 @@
+$toc-text-padding: 24px;
+.design-header-border-none {
+  .v-toolbar__content {
+    border-bottom: none;
+  }
+}
+.design-left-sidebar-border-none {
+  .v-navigation-drawer__border {
+    display: none;
+  }
+}
+.design-right-sidebar-border-none {
+  .v-navigation-drawer__border {
+    display: none;
+  }
+}
+@for $i from 2 through 6 {
+  .level-#{$i} {
+    padding-left: $toc-text-padding*$i+1;
+  }
+}

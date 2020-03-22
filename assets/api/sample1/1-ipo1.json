@@ -1,0 +1,86 @@
+{
+  "info": {
+    "_postman_id": "08db5dbd-6f57-4739-990b-b091581ac455",
+    "name": "ipo1",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "latest",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://ipo-cal.appspot.com/api/ipo/latest",
+          "protocol": "http",
+          "host": ["ipo-cal", "appspot", "com"],
+          "path": ["api", "ipo", "latest"]
+        },
+        "description": "# 今日の情報\n\n- sample1\n`sample`aaaaaaa\n- sample2\n\n|sample1|sample2|\n|-|-|\n|hello|world|\n\n```\n{\n  \"custom_fields\": [\n    {\n      \"template_id\": 1,\n      \"value\": \"string\"\n    },\n    {\n      \"template_id\": 2,\n      \"value\": \"text\"\n    },\n    {\n      \"template_id\": 3,\n      \"value\": 0\n    },\n    {\n      \"template_id\": 4,\n      \"value\": \"2017-03-09\"\n    },\n    {\n      \"template_id\": 5,\n      \"value\": \"enum_element_physical_name\"\n    },\n    {\n      \"template_id\": 6,\n      \"value\": \"/9j/4AAQSkZJRgABAQAASABIAAD/4QCMRXhpZgAATU0AK...\",\n      \"file_name\": \"awesome_image.jpg\"\n    }\n  ]\n}\n```"
+      },
+      "response": [
+        {
+          "name": "latest",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://ipo-cal.appspot.com/api/ipo/latest",
+              "protocol": "http",
+              "host": ["ipo-cal", "appspot", "com"],
+              "path": ["api", "ipo", "latest"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "X-Cloud-Trace-Context",
+              "value": "c9e3911118a34dc98ad89044c7742a19;o=1"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 08 Mar 2020 09:10:08 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "Google Frontend"
+            },
+            {
+              "key": "Content-Length",
+              "value": "1065"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"result\": true,\n    \"code\": 200,\n    \"detail\": \"OK\",\n    \"data\": {\n        \"_id\": \"7086\",\n        \"code\": \"7086\",\n        \"date\": \"2020/03/06\",\n        \"name\": \"（株）きずなホールディングス\",\n        \"market_key\": \"mothers\",\n        \"market_name\": \"マザーズ\",\n        \"sector_key\": \"svc\",\n        \"sector_name\": \"サービス\",\n        \"url\": \"https://www.kizuna-hd.co.jp/\",\n        \"p_kari\": \"2,200～2,320\",\n        \"v_kobo\": \"50\",\n        \"p_uri\": \"2,320\",\n        \"v_uri\": \"1,697.2(OA262)\",\n        \"unit\": \"100\",\n        \"fs_ol\": [\n            \"http://www.jpx.co.jp/listing/stocks/new/nlsgeu000004iwq5-att/03KIZUNAHOLDINGS-Outline.pdf\"\n        ],\n        \"fs_i\": [\n            \"http://www.jpx.co.jp/listing/stocks/new/nlsgeu000004iwq5-att/03KIZUNAHOLDINGS-k.pdf\"\n        ],\n        \"fs_k\": [\n            \"http://www.jpx.co.jp/listing/stocks/new/nlsgeu000004iwq5-att/03KIZUNAHOLDINGS-1s.pdf\",\n            \"http://www.jpx.co.jp/listing/stocks/new/nlsgeu000004iwq5-att/03KIZUNAHOLDINGS-1ts.pdf\"\n        ],\n        \"fs_cg\": [\n            \"http://www.jpx.co.jp/listing/stocks/new/nlsgeu000004iwq5-att/03KIZUNAHOLDINGS-cg.pdf\"\n        ],\n        \"fs_tan\": [\n            \"http://www.jpx.co.jp/listing/stocks/new/nlsgeu000004iwq5-att/03KIZUNAHOLDINGS.pdf\"\n        ]\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "post sample",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": ""
+        },
+        "description": "スライスに関して\n * [Go言語のスライスで勘違いしやすいこところ](https://qiita.com/Kashiwara/items/e621a4ad8ec00974f025)\n * [Go言語、「>>」の意味。](https://teratail.com/questions/18602)\n メソッドに関して\n * [golang メソッドについてまとめてみた。](https://qiita.com/pei0804/items/2a3010df39623fadc3c6)"
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
